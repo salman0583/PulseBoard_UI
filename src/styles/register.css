@@ -1,0 +1,113 @@
+/* Register Page Styles */
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: linear-gradient(135deg, var(--color-primary-500), var(--color-primary-600), var(--color-secondary-600));
+}
+
+.register-wrapper {
+  width: 100%;
+  max-width: 48rem;
+}
+
+.register-logo-section {
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.register-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background: white;
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 1rem;
+}
+
+.register-logo svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-primary-600);
+}
+
+.register-title {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.register-subtitle {
+  color: var(--color-primary-100);
+  font-size: 1rem;
+}
+
+.register-card {
+  background: white;
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-2xl);
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-out 0.1s both;
+}
+
+.register-back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-gray-600);
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  font-size: 0.875rem;
+  transition: color 0.2s;
+}
+
+.register-back-button:hover {
+  color: var(--color-gray-900);
+}
+
+.register-back-button svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.register-form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .register-form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.register-terms {
+  text-align: center;
+  color: var(--color-gray-600);
+  font-size: 0.875rem;
+}
+
+.register-terms a {
+  color: var(--color-primary-600);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.register-terms a:hover {
+  color: var(--color-primary-700);
+}
