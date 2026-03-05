@@ -52,14 +52,13 @@ export function OTPVerificationPage({
     setError('');
 
     try {
-      await apiFetch('/api/verify-otp/', {
-        method: 'POST',
-        body: JSON.stringify({
-          email,
-          otp: otpCode,
-        }),
-      });
-
+      const res = await apiFetch('/api/verify-otp/', {
+      method: 'POST',
+      body: JSON.stringify({
+        email,
+        otp: otpCode,
+      }),
+    });
       // ✅ Login successful
       onVerified();
     } catch (err: any) {
